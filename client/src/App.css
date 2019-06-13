@@ -1,0 +1,87 @@
+.App {
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+.bg {
+  background: url('./assets/marvel.jpg') center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: rgba(46, 46, 46, 0.9);
+  position: absolute;
+}
+
+.logo {
+  position: relative;
+  left: 0;
+  height: 75px;
+}
+
+.text-pm {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.character-list-container {
+  margin: 0 auto;
+  padding-left: 20%;
+  padding-right: 20%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+.c-name {
+  font-size: 24px;
+  background-color: #e9222c;
+}
+
+.character-list-item {
+  margin-bottom: 50px;
+  background-color: #18273a;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 20px;
+  border-bottom: 6px solid #005478;
+}
+
+@media screen and (min-width: 768px){
+  .character-list-container {
+    width: 100%;
+    max-width: 1140px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .infinite-scroll-component {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .character-list-item {
+    flex-basis: 25%;
+    align-self: baseline;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .character-list-container {
+    padding: 0;
+  }
+  .character-list-item {
+    flex-basis: 20%;
+  }
+}
