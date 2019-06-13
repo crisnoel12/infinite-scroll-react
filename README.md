@@ -1,5 +1,5 @@
 # infinite-scroll-react Project
-A React project using Infinite scroll to list out characters of the [marvel api](https://developer.marvel.com/)
+A React project using Infinite scroll to list out characters of the [marvel api](https://developer.marvel.com/).
 
 ### Technology Used
 - [React](https://reactjs.org/)
